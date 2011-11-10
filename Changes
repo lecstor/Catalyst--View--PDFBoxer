@@ -1,0 +1,5 @@
+Revision history for Perl extension Catalyst::View::PDFBoxer.
+
+0.001   
+        - first release
+        - extend View::TT to process output with PDF::Boxer
