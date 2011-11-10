@@ -3,7 +3,7 @@ use Moose::Role;
 
 # ABSTRACT: Runs view output through PDF::Boxer and sets response content-type if not already set.
 
-use PDF::Boxer;
+use PDF::Boxer 0.003;
 use PDF::Boxer::SpecParser;
 
 use namespace::clean -except => 'meta';
