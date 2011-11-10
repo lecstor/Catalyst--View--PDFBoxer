@@ -12,6 +12,7 @@ ok(($response = request("/test?template=test.tt"))->is_success, 'request ok');
 
 is( ($response->content_type)[0], 'application/pdf', 'content type ok' );
 is( ($response->content_type)[1], 'charset=utf-8', 'charset ok' );
+
 cmp_ok( $response->content, '=~', '^%PDF-', 'pdf sig in content' );
 
 

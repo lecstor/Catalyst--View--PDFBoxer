@@ -1,6 +1,8 @@
 package TestApp::View::PDFBoxer;
+use Moose;
+use namespace::clean -except => 'meta';
 
-use strict;
-use base 'Catalyst::View::PDFBoxer';
+extends qw/Catalyst::View::TT/;
+with qw/Catalyst::View::PDFBoxer/;
 
 1;
